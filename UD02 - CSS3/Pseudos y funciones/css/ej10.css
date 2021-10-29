@@ -56,15 +56,15 @@ h3 {
 
 h1::before {
     color: #FF0000;
-    content: counter(h1, decimal) ". "
+    content: counter(h1, numero) ". "
 }
 
 h2::before {
     color: #B62E40;
-    content: counter(h1, decimal) "."counter(h2, decimal) ". "
+    content: counter(h1, numero) "."counter(h2, decimal) ". "
 }
 
 h3::before {
     color: #F97083;
-    content: counter(h1, decimal) "."counter(h2, decimal) "."counter(h3, lower-alpha) ". "
+    content: counter(h1, numero) "."counter(h2, decimal) "."counter(h3, lower-alpha) ". "
 }
