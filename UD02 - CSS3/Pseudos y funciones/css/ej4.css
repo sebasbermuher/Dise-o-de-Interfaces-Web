@@ -1,0 +1,45 @@
+form{
+	width:450px;
+	padding:20px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:8px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+form input[type="submit"]:hover{
+	cursor:pointer;
+	background-color:white;
+	color:black;
+}
+
+textarea{
+	width:100%;
+	height:150px;
+	border-radius:6px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	display:block;
+}
+
+select{
+	width: 150px;
+	height: 20px;
+}
+
+.datos_personales::before{
+	content: "👤 ";
+}
+
+.datos_matriculacion::before{
+	content: "📄 ";
+}

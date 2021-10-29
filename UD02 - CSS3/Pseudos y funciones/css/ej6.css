@@ -1,0 +1,37 @@
+li{
+    display:inline;
+    margin-left: 10px;
+    padding: 10px ;
+    background-color: #F5D3AD;
+    color: #A73D34;
+    font-weight: bold;
+    border: #A73D34 2px solid;
+    border-bottom: none;
+
+}
+
+ li:hover{
+    background-color: white;
+    color:grey;
+    border: black 2px solid;
+    border-bottom: none;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: -14px;
+    border-color:black;
+}
+
+h1{
+    text-align: center;
+}
+
+li hr{
+     border-color: green;
+
+ }

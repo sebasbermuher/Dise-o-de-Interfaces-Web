@@ -1,0 +1,53 @@
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+nav > ul {
+  text-align: center;
+  list-style: none;
+}
+
+nav > ul > li:nth-of-type(even) {
+  background: red;
+}
+
+nav > ul {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin: 0px;
+}
+
+nav > ul > li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 5px;
+}
+
+article {
+  margin-left: 34%;
+  margin-right: 34%;
+  margin-top: 2%;
+  border: 2px solid black;
+}
+
+.titulo {
+  background-image: linear-gradient(white, grey, white);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+p {
+  text-indent: 7%;
+}
+
+article > section {
+  margin: 2%;
+}
+
+section > ul > li {
+  list-style-image: url("../img/estrella.png");
+}

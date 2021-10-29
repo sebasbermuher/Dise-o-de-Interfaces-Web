@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+*{
+    font-family: 'Irish Grover', cursive;
+}
+
+  a::before {
+    content: "->";
+  }
+
+  h2::first-letter {
+    font-size: 3em;
+  }
+  
+  abbr::after {
+    content: "(" attr(title) ")";
+  }
+  
+  h2 + p::first-line {
+    text-indent: 2em;
+  }
+  
+  li:last-child {
+    background-color: grey;
+  }
+
+  li:nth-child(odd) {
+    border: 1px dotted pink;
+  }
+
+
+  li:first-child {
+    background-color: yellow;
+  }
+  
+
+  
+ 

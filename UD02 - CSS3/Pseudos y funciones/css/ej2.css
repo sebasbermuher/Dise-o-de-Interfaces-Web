@@ -1,0 +1,39 @@
+table{
+    border-spacing: 0px;
+    margin: auto;
+    margin-top: 3%;
+}
+
+table,td,th{
+    border:1px solid black;
+}
+
+table tr th:nth-of-type(1) {
+    background-color:#B0D2F7;
+  }
+
+  tr:first-child th:first-child {
+    background-color: #c8c8c8;
+
+}
+
+  tr th {
+      background-color: #C8C8C8;
+  }
+
+  tr:nth-of-type(even) td {
+    background: #F8E488;
+  }
+
+  tr:nth-of-type(even) td:hover {
+    background: #517FF2;
+  }
+
+  td:hover{
+      background-color: #517FF2;
+  }
+
+  td{
+      text-align: center;
+  }
+

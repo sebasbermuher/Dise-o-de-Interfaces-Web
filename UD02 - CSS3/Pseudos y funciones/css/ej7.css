@@ -1,0 +1,42 @@
+li{
+    display: block;
+    width: 100%;
+}
+
+nav{
+    width: 25%;
+}
+
+.home::before{
+    content: "🏠";    
+}
+
+.opcion::before{
+    content: "📂";    
+}
+.pagina::before{
+    content: "📄";
+}
+
+.pagina2::before{
+    content: "📕";
+}
+
+.opcion{
+    background-color: grey;
+}
+
+.home{
+    background-color: grey;
+}
+
+.pagina{
+    background-color: grey;
+}
+
+a:hover{
+    background-color: #A5E5D8;
+}
+
+
+

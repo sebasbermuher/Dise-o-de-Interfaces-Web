@@ -1,0 +1,53 @@
+body{
+    display:flex;
+    justify-content:center
+}
+
+ul{
+    list-style: none;
+}
+
+div{
+    background-color: yellow;
+    border-radius: 50px;
+    box-shadow: 15px 15px 15px 15px  blue;
+    padding: 50px;
+    width: fit-content;
+}
+
+li:hover{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+div:hover{
+    cursor: pointer;
+}
+
+
+li:first-child {
+    text-decoration: overline black;
+    list-style: circle black;
+    color: red;
+    
+}
+li:first-child::first-letter{
+    color:blue;
+} 
+
+li:last-child{
+    text-decoration:underline black;
+}
+
+li:last-child::first-letter{
+    color: green;
+}
+
+li:first-child::first-letter{
+    font-size: 1.5em;
+}
+
+ li:last-child::first-letter{
+    font-size: 1.5em;
+}
+

@@ -1,0 +1,40 @@
+table>caption{
+    letter-spacing: 3px;
+    color:red;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0px;
+    margin: auto;
+    margin-top: 3%;
+
+}
+
+th{
+    border: 3px solid #03BC11;
+
+}
+table, td{
+    border: 2px solid #319FF6;
+    height: 25px;
+    padding-left:6px;
+    padding-right:6px;
+}
+
+tr:nth-child(even) {
+    background-color: #DFF4FD;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #A2E3FE;
+  }
+
+
+  td:nth-of-type(1) {
+    width: 150px;
+    
+  }
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" type="text/css" href="css/ej4.css" />
+  </head>
+  <body>
+    <div>
+      <form>
+        <h2 class="datos_personales">Datos personales</h2>
+        <label for="fname">Nombre:</label><br />
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="lname">Apellidos:</label><br />
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <label for="dni">DNI:</label><br />
+        <input type="text" id="dni" name="dni" /><br /><br />
+        <label for="Sexo">Sexo</label>
+        <select name="sexo">
+          <option
+            selected
+            disabled
+            hidden
+            style="display: none"
+            value=""
+          ></option>
+
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+        </select>
+        <br />
+        <br />
+        <label for="fechaNacim">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacim" name="fechaNacim" /><br /><br />
+        <h2 class="datos_matriculacion">Datos de matriculacion</h2>
+        <label for="curso">Curso</label>
+        <select name="curso">
+          <option
+            selected
+            disabled
+            hidden
+            style="display: none"
+            value=""
+          ></option>
+          <option value="primer">1º DAW</option>
+          <option value="segundo">2º DAW</option>
+        </select>
+        <br /><br />
+        <label for="modulos">Seleccione los modulos a cursar:</label> <br />
+        <input type="checkbox" name="diseño" /> Diseño<br />
+        <input type="checkbox" name="cliente" /> Cliente<br />
+        <input type="checkbox" name="servidor" /> Servidor<br />
+        <input type="checkbox" name="empresa" /> Empresa<br />
+        <input type="checkbox" name="despliegue" /> Despliegue<br />
+        <input type="checkbox" name="HLC" /> HLC<br /><br />
+        <label for="modulos">Escribe los modulos a convalidar:</label><br />
+        <textarea name="convalidaciones" rows="10" cols="40"></textarea>
+
+        <br /><br /><input type="submit" value="Matricular" />
+      </form>
+    </div>
+  </body>
+</html>

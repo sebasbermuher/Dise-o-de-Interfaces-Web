@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p:first-child {
+        color: yellow;
+      }
+
+      /*
+p:first-of-type{
+color:blue;
+}
+*/
+
+      p:nth-of-type(1) {
+        color: yellow;
+      }
+
+      p:nth-of-type(odd) {
+        /*even = pares//odd=impares*/
+        background: green;
+      }
+
+      p:last-of-type {
+        background: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+
+    <div>
+      <h3>Ejemplo 1</h3>
+      <p>The first paragraph.</p>
+      <p>The second paragraph.</p>
+    </div>
+
+    <div>
+      <h3>Ejemplo 1</h3>
+      <p>The third paragraph.</p>
+      <p>The fourth paragraph.</p>
+    </div>
+  </body>
+</html>
