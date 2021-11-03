@@ -1,0 +1,69 @@
+/************************************************************************************
+ESTILOS GENERALES
+*************************************************************************************/
+#header
+{
+	margin-bottom: 10px;
+    background-color: grey;
+}
+
+#col1
+{
+	float: left;
+	width: 32%;
+    background-color: #bbb;
+    margin-bottom: 15px;
+    padding-bottom: 100px;
+
+}
+
+#col2
+{
+	float: left;
+	width: 32%;
+	margin-left: 2%;
+    background-color: #bbb;
+    padding-bottom: 100px;
+}
+
+#col3
+{
+	float: right;
+	width: 32%;
+	margin-left: 2%;
+    background-color: #bbb;
+    padding-bottom: 100px;
+}
+
+
+#footer
+{
+	clear: both;
+    background-color:grey;
+}
+
+/************************************************************************************
+RESPONSIVE MOBILE DESIGN: Smartphones
+*************************************************************************************/
+@media (max-width:499px)
+{
+	#col1 {
+		float: left;
+		width: 100%;
+		background-color: #bbb;
+		margin-bottom: 10px;
+	}
+	
+	#col2 {
+        background-color: #bbb;
+        width:100%;
+        margin-bottom:10px;
+	}
+	
+	#col3 {
+		float: left;
+		width: 100%;
+		background-color: #bbb;
+		margin-bottom: 10px;
+	}
+}

@@ -1,0 +1,57 @@
+/************************************************************************************
+ESTILOS GENERALES
+*************************************************************************************/
+header {
+	margin-bottom: 10px;
+	background-color: #666;
+}
+
+aside {
+	float: left;
+	width: 20%;
+	margin-bottom: 10px;
+	background-color: #999;
+	
+	/* Intervalo altura permitida: [200px,400px], más allá no se muestra el contenido  */
+	min-height: 200px; 	/* Si la altura necesaria para mostrar los contenidos es inferior a la altura mínima, se fuerza a que la altura del elemento sea igual que la altura mínima. */	
+	height: 400px;
+	max-height: 400px; 	/* Si la altura necesaria para mostrar los contenidos es superior que la altura máxima permitida, los contenidos se desbordan y no se ajustan. */
+	overflow: hidden; /* Si se sobrepasa el contenido más del límite de max-height, el contenido no se muestra */
+}
+
+article section {
+	float: left;
+	width: 58%;
+	margin-left: 1%;
+	margin-bottom: 10px;
+	margin-right: 1%;
+	text-align: justify;
+	background-color: #999;
+
+	/* Intervalo altura permitida: [200px,400px], más allá no se muestra el contenido  */
+	min-height: 200px; 	/* Si la altura necesaria para mostrar los contenidos es inferior a la altura mínima, se fuerza a que la altura del elemento sea igual que la altura mínima. */	
+	height: 400px;
+	max-height: 400px; 	/* Si la altura necesaria para mostrar los contenidos es superior que la altura máxima permitida, los contenidos se desbordan y no se ajustan. */
+	overflow: hidden; /* Si se sobrepasa el contenido más del límite de max-height, el contenido no se muestra */
+}
+
+footer {
+	clear: both;
+	background-color: #666;
+}
+
+/************************************************************************************
+RESPONSIVE MOBILE DESIGN: Smartphones (menos de 500px)
+*************************************************************************************/
+@media (max-width:499px)
+{
+	aside {
+		float: left;
+		width: 100%;
+	}
+	
+	article section {
+		float: left;
+		width: 100%;
+	}
+}

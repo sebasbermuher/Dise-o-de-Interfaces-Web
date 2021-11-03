@@ -1,0 +1,171 @@
+<!doctype html>
+<!--
+=======================================================================
+=== Fecha: 22/01/2020                                    Rev.  0.1 ====
+======================================================================= 
+=== Titulo: Ejercicio 2                                             ===
+=======================================================================
+=== Autor: Alejandro Cardo Grau                                     ===
+=======================================================================
+=== Asignatura: Diseño de Interfaces                                ===
+=======================================================================
+-->
+
+
+<html>
+<head>
+<title>Ejercicio 2</title>
+<meta charset="utf-8" />
+<style>
+header {
+	margin-bottom: 10px;
+	background-color: #666;
+}
+
+aside {
+	float: left;
+	width: 20%;
+	margin-bottom: 10px;
+	background-color: #999;
+	
+	/* Intervalo altura permitida: [200px,400px], más allá no se muestra el contenido  */
+	min-height: 200px; 	/* Si la altura necesaria para mostrar los contenidos es inferior a la altura mínima, se fuerza a que la altura del elemento sea igual que la altura mínima. */	
+	height: 400px;
+	max-height: 400px; 	/* Si la altura necesaria para mostrar los contenidos es superior que la altura máxima permitida, los contenidos se desbordan y no se ajustan. */
+	overflow: hidden; /* Si se sobrepasa el contenido más del límite de max-height, el contenido no se muestra */
+}
+
+article section {
+	float: left;
+	width: 66%;
+	margin-left: 3%;
+	margin-bottom: 10px;
+	margin-right: 10%;
+	text-align: justify;
+	background-color: #999;
+
+	/* Intervalo altura permitida: [200px,400px], más allá no se muestra el contenido  */
+	min-height: 200px; 	/* Si la altura necesaria para mostrar los contenidos es inferior a la altura mínima, se fuerza a que la altura del elemento sea igual que la altura mínima. */	
+	height: 400px;
+	max-height: 400px; 	/* Si la altura necesaria para mostrar los contenidos es superior que la altura máxima permitida, los contenidos se desbordan y no se ajustan. */
+	overflow: hidden; /* Si se sobrepasa el contenido más del límite de max-height, el contenido no se muestra */
+}
+
+footer {
+	clear: both;
+	background-color: #666;
+}
+</style>
+</head>
+
+<body>
+	<header>Lorem ipsum dolor sit amet, consectetur adipiscing
+		elit. Aliquam condimentum ligula vestibulum risus molestie imperdiet.
+		Suspendisse eu lobortis metus. Pellentesque tempor libero sed ante
+		condimentum, vel congue sapien eleifend. Nullam lacus risus, tincidunt
+		sed metus ut, ullamcorper molestie turpis. In a elit neque. Nullam id
+		mi purus. Suspendisse congue hendrerit consectetur. Vestibulum ante
+		ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+		Curae; Ut at diam a nunc dignissim varius. Aenean ullamcorper eros
+		sem, quis gravida est venenatis a. Phasellus urna nunc, tempus nec
+		erat sed, mattis cursus nibh. Nulla ac tristique eros, sit amet
+		viverra ligula. Vestibulum rutrum sapien quis placerat suscipit.</header>
+
+	<aside>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Aliquam condimentum ligula vestibulum risus molestie imperdiet.
+		Suspendisse eu lobortis metus. Pellentesque tempor libero sed ante
+		condimentum, vel congue sapien eleifend. Nullam lacus risus, tincidunt
+		sed metus ut, ullamcorper molestie turpis. In a elit neque. Nullam id
+		mi purus. Suspendisse congue hendrerit consectetur. Vestibulum ante
+		ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+		Curae; Ut at diam a nunc dignissim varius. Aenean ullamcorper eros
+		sem, quis gravida est venenatis a. Phasellus urna nunc, tempus nec
+		erat sed, mattis cursus nibh. Nulla ac tristique eros, sit amet
+		viverra ligula. Vestibulum rutrum sapien quis placerat suscipit.Lorem
+		ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum
+		ligula vestibulum risus molestie imperdiet. Suspendisse eu lobortis
+		metus. Pellentesque tempor libero sed ante condimentum, vel congue
+		sapien eleifend. Nullam lacus risus, tincidunt sed metus ut,
+		ullamcorper molestie turpis. In a elit neque. Nullam id mi purus.
+		Suspendisse congue hendrerit consectetur. Vestibulum ante ipsum primis
+		in faucibus orci luctus et ultrices posuere cubilia Curae; Ut at diam
+		a nunc dignissim varius. Aenean ullamcorper eros sem, quis gravida est
+		venenatis a. Phasellus urna nunc, tempus nec erat sed, mattis cursus
+		nibh. Nulla ac tristique eros, sit amet viverra ligula. Vestibulum
+		rutrum sapien quis placerat suscipit.Lorem ipsum dolor sit amet,
+		consectetur adipiscing elit. Aliquam condimentum ligula vestibulum
+		risus molestie imperdiet. Suspendisse eu lobortis metus. Pellentesque
+		tempor libero sed ante condimentum, vel congue sapien eleifend. Nullam
+		lacus risus, tincidunt sed metus ut, ullamcorper molestie turpis. In a
+		elit neque. Nullam id mi purus. Suspendisse congue hendrerit
+		consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et
+		ultrices posuere cubilia Curae; Ut at diam a nunc dignissim varius.
+		Aenean ullamcorper eros sem, quis gravida est venenatis a. Phasellus
+		urna nunc, tempus nec erat sed, mattis cursus nibh. Nulla ac tristique
+		eros, sit amet viverra ligula. Vestibulum rutrum sapien quis placerat
+		suscipit.</aside>
+
+	<article>
+		<section>Lorem ipsum dolor sit amet, consectetur adipiscing
+			elit. Aliquam condimentum ligula vestibulum risus molestie imperdiet.
+			Suspendisse eu lobortis metus. Pellentesque tempor libero sed ante
+			condimentum, vel congue sapien eleifend. Nullam lacus risus,
+			tincidunt sed metus ut, ullamcorper molestie turpis. In a elit neque.
+			Nullam id mi purus. Suspendisse congue hendrerit consectetur.
+			Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+			posuere cubilia Curae; Ut at diam a nunc dignissim varius. Aenean
+			ullamcorper eros sem, quis gravida est venenatis a. Phasellus urna
+			nunc, tempus nec erat sed, mattis cursus nibh. Nulla ac tristique
+			eros, sit amet viverra ligula. Vestibulum rutrum sapien quis placerat
+			suscipit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Aliquam condimentum ligula vestibulum risus molestie imperdiet.
+			Suspendisse eu lobortis metus. Pellentesque tempor libero sed ante
+			condimentum, vel congue sapien eleifend. Nullam lacus risus,
+			tincidunt sed metus ut, ullamcorper molestie turpis. In a elit neque.
+			Nullam id mi purus. Suspendisse congue hendrerit consectetur.
+			Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+			posuere cubilia Curae; Ut at diam a nunc dignissim varius. Aenean
+			ullamcorper eros sem, quis gravida est venenatis a. Phasellus urna
+			nunc, tempus nec erat sed, mattis cursus nibh. Nulla ac tristique
+			eros, sit amet viverra ligula. Vestibulum rutrum sapien quis placerat
+			suscipit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Aliquam condimentum ligula vestibulum risus molestie imperdiet.
+			Suspendisse eu lobortis metus. Pellentesque tempor libero sed ante
+			condimentum, vel congue sapien eleifend. Nullam lacus risus,
+			tincidunt sed metus ut, ullamcorper molestie turpis. In a elit neque.
+			Nullam id mi purus. Suspendisse congue hendrerit consectetur.
+			Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+			posuere cubilia Curae; Ut at diam a nunc dignissim varius. Aenean
+			ullamcorper eros sem, quis gravida est venenatis a. Phasellus urna
+			nunc, tempus nec erat sed, mattis cursus nibh. Nulla ac tristique
+			eros, sit amet viverra ligula. Vestibulum rutrum sapien quis placerat
+			suscipit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Aliquam condimentum ligula vestibulum risus molestie imperdiet.
+			Suspendisse eu lobortis metus. Pellentesque tempor libero sed ante
+			condimentum, vel congue sapien eleifend. Nullam lacus risus,
+			tincidunt sed metus ut, ullamcorper molestie turpis. In a elit neque.
+			Nullam id mi purus. Suspendisse congue hendrerit consectetur.
+			Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+			posuere cubilia Curae; Ut at diam a nunc dignissim varius. Aenean
+			ullamcorper eros sem, quis gravida est venenatis a. Phasellus urna
+			nunc, tempus nec erat sed, mattis cursus nibh. Nulla ac tristique
+			eros, sit amet viverra ligula. Vestibulum rutrum sapien quis placerat
+			suscipit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Aliquam condimentum ligula vestibulum risus molestie imperdiet.
+			Suspendisse eu lobortis metus. Pellentesque tempor libero sed ante
+			condimentum, vel congue sapien eleifend.</section>
+	</article>
+
+	<footer>Lorem ipsum dolor sit amet, consectetur adipiscing
+		elit. Aliquam condimentum ligula vestibulum risus molestie imperdiet.
+		Suspendisse eu lobortis metus. Pellentesque tempor libero sed ante
+		condimentum, vel congue sapien eleifend. Nullam lacus risus, tincidunt
+		sed metus ut, ullamcorper molestie turpis. In a elit neque. Nullam id
+		mi purus. Suspendisse congue hendrerit consectetur. Vestibulum ante
+		ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+		Curae; Ut at diam a nunc dignissim varius. Aenean ullamcorper eros
+		sem, quis gravida est venenatis a. Phasellus urna nunc, tempus nec
+		erat sed, mattis cursus nibh. Nulla ac tristique eros, sit amet
+		viverra ligula. Vestibulum rutrum sapien quis placerat suscipit.</footer>
+</body>
+</html>
