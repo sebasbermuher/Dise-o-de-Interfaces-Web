@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto auto auto;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+
+      .item {
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        text-align: left;
+        padding: 20px;
+        font-size: 35px;
+        box-shadow: black 0px 0px 8px;
+      }
+
+      .headerFooter {
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        font-size: 35px;
+        box-shadow: black 0px 0px 8px;
+        grid-column: 1 / span 3;
+        text-shadow: 4px 4px green;
+      }
+
+      .aside1 {
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        font-size: 35px;
+        box-shadow: black 0px 0px 8px;
+        grid-column: 1;
+        grid-row: 2 / 4;
+      }
+
+      .aside2 {
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        font-size: 35px;
+        box-shadow: black 0px 0px 8px;
+        grid-column: 3;
+        grid-row: 2 / 4;
+      }
+
+      .section {
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        font-size: 35px;
+        box-shadow: black 0px 0px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ejercicio 4</h1>
+
+    <div class="grid-container">
+      <div class="headerFooter">Header</div>
+      <div class="aside1">Aside 1</div>
+      <div class="section">Section</div>
+      <div class="aside2">Aside 2</div>
+      <div class="section">Section</div>
+      <div class="headerFooter">Footer</div>
+    </div>
+  </body>
+</html>
