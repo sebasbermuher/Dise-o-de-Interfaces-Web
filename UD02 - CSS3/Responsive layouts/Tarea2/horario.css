@@ -1,0 +1,95 @@
+*{
+    font-weight: bold;
+}
+.dia{
+    color:White;
+    background-color: #3F3F3F;
+}
+
+.ciclo{
+    background-color:red;
+    color:white;
+}
+
+
+.mantenimiento{
+    background-color:red;
+    color:white;
+}
+
+.zumba{
+    background-color:red;
+    color:white;
+}
+
+.zumbastep{
+    background-color:red;
+    color:white;
+}
+
+.aquagym{
+    background-color:blue;
+    color:white;
+}
+
+.hidrogimnasia{
+    background-color:blue;
+    color:white;
+}
+
+.bodypump{
+    background-color: #FAC314;
+    color:white;
+}
+
+.libre{
+    background-color:#C2C2C2;
+    color:black;
+}
+
+.hora{
+    background-color:#C2C2C2;
+    color:black;
+}
+
+/* -------------------------------- */
+
+#contenedor {
+    display:flex;
+    border: 3px solid pink;
+    box-shadow: 15px 10px #888888;
+    margin:20px;
+    align-content:center;
+
+  }
+
+.columna>div{
+    height:4em;
+    width:9em;
+    margin: 15px;
+    
+}
+
+.columna1>div{
+    height:4em;
+    width:9em;
+    margin: 15px;
+}
+
+.columna1>.hora{
+    height:4em;
+    width:4em;
+}
+
+.columna1>.tituloHora{
+    color:White;
+    background-color: #3F3F3F;
+    height:4em;
+    width:4em;
+}
+
+
+/*No me funciona, por eso en el HTML he puesto otro div*/
+.tituloHora{
+    flex-grow: 2; 
+}

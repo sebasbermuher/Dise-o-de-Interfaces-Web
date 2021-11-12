@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-shrink</title>
+  <style>
+    div {
+      display: flex;
+    }
+
+    p {
+      flex-shrink: 1;
+      border: black 1px solid;
+      margin: 2px;
+    }
+
+    p.menor {
+      flex-shrink: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>Uno, con bastante texto, así que los elementos no van a caber en una sola línea</p>
+    <p>Dos, con bastante texto, así que los elementos no van a caber en una sola línea</p>
+    <p class="menor">Tres (clase "menor"), con una cantidad de texto similar al resto</p>
+    <p>Cuatro, con bastante texto, así que los elementos no van a caber en una sola línea</p>
+  </div>
+
+
+</body>
+
+</html>

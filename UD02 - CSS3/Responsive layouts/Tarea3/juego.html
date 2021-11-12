@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="juego.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+
+    <title>Juego</title>
+  </head>
+  <body>
+    <h1 class="titulo">MI AJEDREZ</h1>
+    <div class="container">
+      <div class="borde"></div>
+      <div class="borde">A</div>
+      <div class="borde">B</div>
+      <div class="borde">C</div>
+      <div class="borde">D</div>
+      <div class="borde">E</div>
+      <div class="borde">F</div>
+      <div class="borde">G</div>
+      <div class="borde">H</div>
+      <div class="borde"></div>
+      <div class="borde">8</div>
+      <div class="blanco ficha">&#9814</div>
+      <div class="negro ficha">&#9816</div>
+      <div class="blanco ficha">&#9815</div>
+      <div class="negro ficha">&#9813</div>
+      <div class="blanco ficha">&#9812</div>
+      <div class="negro ficha">&#9815</div>
+      <div class="blanco ficha">&#9816</div>
+      <div class="negro ficha">&#9814</div>
+      <div class="borde">8</div>
+      <div class="borde">7</div>
+      <div class="negro ficha">&#9817</div>
+      <div class="blanco ficha">&#9817</div>
+      <div class="negro ficha">&#9817</div>
+      <div class="blanco ficha">&#9817</div>
+      <div class="negro ficha">&#9817</div>
+      <div class="blanco ficha">&#9817</div>
+      <div class="negro ficha">&#9817</div>
+      <div class="blanco ficha">&#9817</div>
+      <div class="borde">7</div>
+      <div class="borde">6</div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="borde">6</div>
+      <div class="borde">5</div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="borde">5</div>
+      <div class="borde">4</div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="borde">4</div>
+      <div class="borde">3</div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="negro"></div>
+      <div class="blanco"></div>
+      <div class="borde">3</div>
+      <div class="borde">2</div>
+      <div class="blanco ficha">&#9823</div>
+      <div class="negro ficha">&#9823</div>
+      <div class="blanco ficha">&#9823</div>
+      <div class="negro ficha">&#9823</div>
+      <div class="blanco ficha">&#9823</div>
+      <div class="negro ficha">&#9823</div>
+      <div class="blanco ficha">&#9823</div>
+      <div class="negro ficha">&#9823</div>
+      <div class="borde">2</div>
+      <div class="borde">1</div>
+      <div class="negro ficha">&#9820</div>
+      <div class="blanco ficha">&#9822</div>
+      <div class="negro ficha">&#9821</div>
+      <div class="blanco ficha">&#9818</div>
+      <div class="negro ficha">&#9819</div>
+      <div class="blanco ficha">&#9821</div>
+      <div class="negro ficha">&#9822</div>
+      <div class="blanco ficha">&#9820</div>
+      <div class="borde">1</div>
+      <div class="borde"></div>
+      <div class="borde">A</div>
+      <div class="borde">B</div>
+      <div class="borde">C</div>
+      <div class="borde">D</div>
+      <div class="borde">E</div>
+      <div class="borde">F</div>
+      <div class="borde">G</div>
+      <div class="borde">H</div>
+      <div class="borde"></div>
+    </div>
+
+    <aside class="formulario">
+        <form>
+            <fieldset>
+              <legend>Datos de la partida</legend>
+              <table>
+                <tr>
+                  <td>Nombre </td>
+                  <td><input type="text" name="nombreDisco" /></td>
+                </tr>
+                <tr>
+                  <td>Fichas</td>
+                  <td>
+                    <input name="fichas" type="radio" value="negras" checked />Negras
+                    <input name="fichas"type="radio"value="blancas" />Blancas
+                  </td>
+                </tr>
+              </table>
+              <p>
+                <input type="submit" value="Empezar Partida" />
+                <input type="reset" value="Eliminar" />
+              </p>
+            </fieldset>
+          </form>
+    </aside>
+
+    <aside class="reglas">
+        <h1 class="titulo_reglas">Reglas básicas del Ajedrez</h1>
+        <ul> 
+            <li><p class="sub">Reglas Básicas</p>
+                <ul><li>El ajedrez es un juego de dos jugadores, donde a un jugador se le asignan piezas blancas y al otro negras. Cada jugador dispone de 16 piezas al empezar el juego: un rey, una dama o reina, dos torres, dos alfiles, dos caballos y ocho peones.</li>
+            </li> </ul>
+            <li><p class="sub">Jaque mate</p>
+                <ul><li>El principal objetivo en el ajedrez en hacer jaque mate al rey de tu oponente. Cuando un rey no puede evitar ser capturado se dice que es jaque mate y el juego finaliza inmediatamente.</li></ul>
+            </li>
+            <li><p class="sub">Tablas por ahogado</p>
+                <ul><li>Se dice 'tablas' cuando al jugador que le toca mover no puede hacer ningún movimiento legal y su rey no esta en jaque. Esto finaliza inmediatamente el juego.</li></ul>
+            </li>
+            <li><p class="sub">Control del tiempo </p>
+                <ul><li>Se emplea un reloj de ajedrez normal para limitar la duración de la partida. Estos relojes contabilizan el tiempo que le lleva a cada jugador realizar sus movimientos por separado.</li></ul>
+            </li>
+     </ul>
+    </aside>
+
+    <footer>
+      <div class="firma">
+        <p>Diseñado por &#169 Sebastian Bermúdez Herrera</p>
+        <p>Diseño de Interfaces Web - 2º DAW - I.E.S. Alixar</p>
+      </div>
+    </footer>
+  </body>
+</html>

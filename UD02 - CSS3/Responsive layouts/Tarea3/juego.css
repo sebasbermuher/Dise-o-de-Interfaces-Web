@@ -1,0 +1,218 @@
+html{
+    background-image: url("https://i.pinimg.com/originals/45/2b/76/452b766e41a525d51b8c271d5d23e988.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Yuji Syuku', serif;
+    font-size: 35px;
+    color:white;
+    margin-top:-1%;
+    margin-bottom:0px;
+    text-shadow: 2px 4px red;
+}
+
+ 
+  .container {
+    display: grid;
+    grid-template-columns: 20px 60px 60px 60px 60px 60px 60px 60px 60px 20px;
+    grid-template-rows: 20px 60px 60px 60px 60px 60px 60px 60px 60px 20px;
+    justify-content: center;
+  }
+
+  .borde{
+    background: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+
+  .negro {
+    background: #C66416;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+  }
+
+  .blanco {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+  }
+  
+ .firma{
+     margin-top:-7%;
+     margin-right: 70%;
+     text-align: center;
+     border: 2px solid black;
+     background-color:#A9A9A9;
+     opacity: 0.8;
+     
+ }
+
+.formulario{
+    position: absolute;
+    margin-right: 74%;
+    margin-left: 5%;
+    margin-top:-35%;
+}
+
+.reglas{
+    position: absolute;
+    margin-left: 70%;
+    margin-right: 2%;
+    margin-top:-40.5%;
+    background-color: #C3B26D;
+    border: 2px solid black;
+    
+}
+
+.titulo_reglas{
+    text-align: center;
+}
+
+li {
+    list-style:none;
+    margin-left: -8%;;
+}
+
+.sub{
+    text-decoration: underline;
+}
+
+form{
+    font-weight: bold;
+    background-color: #C3B26D;
+    border: 2px solid black;
+}
+
+.ficha:hover{
+    font-size: 65px;
+    cursor: pointer;
+}
+
+
+/* --------------------- */
+@media (max-width:799px){
+
+    .reglas{
+        display:none;
+    }
+
+  
+
+    html{
+        background-image: url("https://i.pinimg.com/originals/45/2b/76/452b766e41a525d51b8c271d5d23e988.jpg");
+        background-repeat:repeat;
+        background-size: cover;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 10px 40px 40px 40px 40px 40px 40px 40px 40px 10px;
+        grid-template-rows: 10px 40px 40px 40px 40px 40px 40px 40px 40px 10px;
+        justify-content: center;
+      }
+      
+      .formulario{
+          position: absolute;
+          margin-right: 0%;
+          margin-left: 30%;
+          margin-top:1.5%;
+      }
+
+      .firma{
+        margin-top:25%;
+        margin-right: 0%;
+    }
+
+    .negro {
+        background: #C66416;
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+      }
+    
+      .blanco {
+        background: #eee;
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+      }
+
+      .borde{
+        background: black;
+        color: white;
+        font-size: 10px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+      }
+
+}
+
+/* --------------------- */
+@media (max-width:499px){
+
+    .reglas{
+        display:none;
+    }
+
+  
+
+    html{
+        background-image: url("https://i.pinimg.com/originals/45/2b/76/452b766e41a525d51b8c271d5d23e988.jpg");
+        background-repeat:repeat;
+        background-size: cover;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 10px 40px 40px 40px 40px 40px 40px 40px 40px 10px;
+        grid-template-rows: 10px 40px 40px 40px 40px 40px 40px 40px 40px 10px;
+        justify-content: center;
+      }
+      
+      .formulario{
+          position: absolute;
+          margin-right: 0%;
+          margin-left: 9%;
+          margin-top:1.5%;
+      }
+
+      .firma{
+        margin-top:48%;
+        margin-right: 0%;
+    }
+
+    .negro {
+        background: #C66416;
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+      }
+    
+      .blanco {
+        background: #eee;
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+      }
+
+      .borde{
+        background: black;
+        color: white;
+        font-size: 10px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+      }
+
+}
+
+

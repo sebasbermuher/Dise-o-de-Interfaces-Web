@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-grow</title>
+  <style>
+    div {
+      display: flex;
+    }
+
+    p {
+      flex-grow: 1;
+      border: black 1px solid;
+      margin: 2px;
+    }
+
+    p.mayor {
+      flex-grow: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>Uno</p>
+    <p>Dos</p>
+    <p class="mayor">Tres (clase "mayor")</p>
+    <p>Cuatro</p>
+  </div>
+
+
+</body>
+
+</html>
