@@ -1,0 +1,91 @@
+/************************************************************************************
+ESTILOS GENERALES
+*************************************************************************************/
+
+* {
+	text-align: center;
+}
+
+body {
+	margin: 1em;
+	font-family: "Arial", sans-serif;
+    font-size: 1rem;
+}
+
+img {
+    margin: 1em 0;
+    box-shadow: 0 0 10px 0;
+    border-radius: 5px;
+	width: 100%;
+}
+
+p {
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+header,
+footer {
+    margin: 0.25rem;
+	padding: 1.25rem;
+	min-height: 3rem;
+	border: 1px solid #eebb55;
+	border-radius: 7px;
+	background: #ffeebb;
+}
+
+#main {
+    display: flex;
+	flex-direction: row-reverse;
+    gap: 0.5em;
+    /* Propiedad intrínseca: flex-wrap: nowrap; */
+}
+
+#main>article, #main>nav, #main>aside {
+    margin: 0.25rem;
+	padding: 1.25rem;
+	border-radius: 7px;
+}
+
+#main>article {
+    border: 1px solid #cccc33;
+	background: #dddd88;
+    flex-basis: 60%;
+}
+
+article section h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#main>nav, #main>aside {
+	border: 1px solid #8888bb;
+	background: #ccccff;
+    flex-basis: 20%;
+}
+
+#main>nav {
+    order: 1;
+}
+
+/************************************************************************************
+RESPONSIVE MOBILE DESIGN: Smartphones
+*************************************************************************************/
+
+@media all and (max-width: 700px) {
+    body {
+        font-size: 80%;
+    }
+	#main {
+        flex-direction: column;
+        gap: 0;
+	}
+    #main>nav {
+		order: 0;
+	}
+
+    #main>article,
+	#main>aside {
+		order: 1;
+	}
+}
