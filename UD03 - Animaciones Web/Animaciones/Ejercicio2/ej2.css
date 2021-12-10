@@ -1,0 +1,85 @@
+.fondo{
+    display:block;
+    margin:auto;
+    margin-top: 8%;
+    border: 3px solid;
+}
+
+.casa{
+    display: block;
+    margin-left: 25%;
+    margin-top: -21%;
+}
+
+.humo{
+  position: absolute;
+  margin-left: 32%;
+    margin-top: -13%;
+    animation-name: efecto;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.sol{
+    position: absolute;
+    margin-left: 18%;
+    margin-top: -13%;
+}
+
+.avion{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: -13%;
+    opacity: 0;
+    animation-name: efectovuelo;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+footer{
+  margin-top: 12%;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* ----------------------------------------- */
+@keyframes efectovuelo {
+    0% {
+      opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes efecto {
+    0% {
+      opacity: 0.8;
+
+    }
+    25% {
+        opacity: 0.6;
+        margin-top: -13%;
+
+    }
+
+    50% {
+      opacity: 0.3;
+      margin-top: -14%;
+
+    }
+    75% {
+        opacity: 0.2;
+        margin-top: -14%;
+
+      }
+    100% {
+      opacity: 0;
+      margin-top: -14%;
+    }
+  }

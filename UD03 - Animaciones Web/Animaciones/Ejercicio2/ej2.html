@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="ej2.css" />
+  </head>
+  <body>
+    <div>
+      <img class="fondo" src="img/paisaje.png" />
+      <img class="casa" src="img/casa.svg" />
+      <img id="rotar" class="sol" src="img/sol.svg" />
+      <img id="vuelo" class="avion" src="img/avion.svg" />
+      <img class="humo" src="img/humo.svg" />
+    </div>
+    <footer>
+      <p>Sebastian Bermúdez Herrera - 2º DAW - Desarrollo de Interfaces Web</p>
+    </footer>
+  </body>
+  <script>
+    var keyframes = [{ transform: "rotate(360deg)" }];
+
+    var params = {
+      duration: 7000,
+      iterations: Infinity,
+    };
+
+    var cubeAnimation = document
+      .getElementById("rotar")
+      .animate(keyframes, params);
+
+    // ---------------------------------
+
+    const time = 8000; // Tiempo en ms
+    var box1 = document.getElementById("vuelo");
+
+    var keyframes2 = [
+      { transform: "translateX(0)" },
+      { transform: "translateX(444%)" },
+    ];
+
+    var params2 = {
+      duration: time,
+      iterations: Infinity,
+    };
+
+    var anim1 = box1.animate(keyframes2, params2);
+  </script>
+</html>

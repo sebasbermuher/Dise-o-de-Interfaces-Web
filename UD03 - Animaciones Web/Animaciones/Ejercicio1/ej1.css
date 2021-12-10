@@ -1,0 +1,380 @@
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    background-color: green;
+    padding: 10px;
+    box-shadow: none;
+    height: 500px;
+    border: black 3px solid;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-image: url(img/juanmi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(img/balon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    border: none;
+    box-shadow: none;
+  }
+
+  .item3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(img/panda.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 450px 160px;
+  }
+
+  .item4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    background-image: url(img/plan.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px 100px;
+  }
+
+  .item5 {
+    grid-column: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url(img/fekir.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .item6 {
+    grid-column: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url(img/cruzcampo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .item7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-image: url(img/serresiete.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .item8 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    background-image: url(img/plantilla2005.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  div {
+    border: 2px solid black;
+    font-size: 35px;
+    box-shadow: black 0px 0px 8px;
+  }
+
+  body {
+    background-color: #2196f3;
+  }
+
+  header,footer{
+    background-color:black;
+    color:white;
+    padding-top:1%;
+    padding-bottom:1%;
+    margin-bottom: 0.5%;
+    opacity: 0.9;
+    margin-top: 0.5%;
+    text-align: center;
+}
+
+h1{
+    text-align:center;
+    font-family: 'Yuji Syuku', serif;
+}
+
+#desplazar {
+  width: 18%;
+  font-size: 20px;
+}
+
+
+  /* -------------------------------- */
+  .move {
+    animation-name: background_move;
+    animation-duration: 7s;
+  }
+
+  @keyframes background_move {
+    from {
+      background-position-x: 0%;
+    }
+
+    to {
+      background-position-x: 50%;
+    }
+  }
+  /* ----------------------------- */
+  .entrarIMG {
+    animation-name: entrarIMG;
+    animation-duration: 4s;
+  }
+
+  @keyframes entrarIMG {
+    0% {
+      opacity: 0;
+      transform: translate3d(2000px, 0, 0);
+    }
+    50% {
+      opacity: 0.7;
+      transform: none;
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  /* -------------------- */
+
+  .pulsar {
+    animation-name: pulsar;
+    animation-duration: 1s;
+  }
+
+  @keyframes pulsar {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      transform: scale3d(1.3, 1.3, 1.3);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  /* --------------------------- */
+
+  .cambiarIMG {
+    animation-name: cambiarIMG;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes cambiarIMG {
+    0% {
+      background-image: url(img/serresiete.jpeg);
+    }
+    80% {
+      background-image: url(img/serresiete2.jpeg);
+    }
+    100% {
+      background-image: url(img/serresiete2.jpeg);
+    }
+  }
+
+  /* --------------------------- */
+
+  .cambiarIMG2 {
+    animation-name: cambiarIMG2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes cambiarIMG2 {
+    0% {
+      background-image: url(img/plan.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 150px 100px;
+    }
+    39% {
+      background-image: url(img/plan.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 150px 100px;
+      opacity: 0.8;
+    }
+    50% {
+      background-image: url(img/alonso.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    100% {
+      background-image: url(img/alonso.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  /* --------------------------- */
+
+  /* .rotar {
+    animation: 3s rotate linear infinite;
+    transform-origin: 50% 50%;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+
+  /* --------------------------- */
+
+  .item8:hover {
+    animation-name: cambiarIMG3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes cambiarIMG3 {
+    0% {
+      background-image: url(img/plantilla2005.jpg);
+    }
+    80% {
+      background-image: url(img/plantilla2021.jpg);
+    }
+    100% {
+      background-image: url(img/plantilla2021.jpg);
+    }
+  }
+  /* --------------------------- */
+
+  .quitarborder {
+    animation-name: quitarborder;
+    animation-duration: 6s;
+  }
+
+  @keyframes quitarborder {
+    0% {
+      border-style: dashed;
+      border-width: 2px;
+      border-color: yellow;
+    }
+    85% {
+        border: black 2px solid;
+
+    }
+    100% {
+      border: black 2px solid;
+    }
+  }
+
+
+
+/* Telefono */
+@media (max-width: 499px) {
+    .grid-container {
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto auto;
+        margin-left: 0%;
+        margin-right: 0%;
+      }
+    
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+    
+      .item2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-size: 100px 100px;
+      }
+    
+      .item3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-size: 150px 115px;
+      }
+    
+      .item4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-size: 150px 100px;
+      }
+    
+      .item5 {
+        grid-column: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+    
+      .item6 {
+        grid-column: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+    
+      .item7 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+    
+      .item8 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+
+      #desplazar {
+        display:none;
+      }
+
+      footer:after{
+          content: "Sebastian Bermudez Herrera \A Segundo - DAW \A Diseño de Interfaces Web";
+          white-space: pre;
+        }
+}
