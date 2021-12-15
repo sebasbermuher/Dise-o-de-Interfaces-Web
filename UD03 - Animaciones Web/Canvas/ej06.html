@@ -1,0 +1,71 @@
+<!--
+ ______________________________________________________________________________
+/\                                                                             \
+\_|                                                                            |
+  |    _____         .__                      .__                              |
+  |   /  _  \   ____ |__| _____ _____    ____ |__| ____   ____   ____   ______ |
+  |  /  /_\  \ /    \|  |/     \\__  \ _/ ___\|  |/  _ \ /    \_/ __ \ /  ___/ |
+  | /    |    \   |  \  |  Y Y  \/ __ \\  \___|  (  <_> )   |  \  ___/ \___ \  |
+  | \____|__  /___|  /__|__|_|  (____  /\___  >__|\____/|___|  /\___  >____  > |
+  |         \/     \/         \/     \/     \/               \/     \/     \/  |
+  |  __________________________________________________________________________|_ 
+  \_/___________________________________________________________________________/
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones Web</title>
+    <script>
+        var contexto;
+
+        function cargaContextoCanvas(idCanvas) {
+            contexto = false, elemento = document.getElementById(idCanvas);
+            if (elemento && elemento.getContext)
+                contexto = elemento.getContext('2d');
+
+            return contexto;
+        }
+
+        function aleatorio(inferior, superior) {
+            numPosibilidades = superior - inferior;
+            aleat = Math.random() * numPosibilidades;
+            aleat = Math.floor(aleat);
+            return parseInt(inferior) + aleat;
+        }
+
+        function colorAleatorio() {
+            return "rgb(" + aleatorio(0, 255) + "," + aleatorio(0, 255) + "," + aleatorio(0, 255) + ")";
+        }
+
+        function cuadradosAleatorios() {
+			let ncuadrados = 10;
+			let width = 10, height = 10;
+			
+            for (i = 0; i < ncuadrados * width; i += width) {
+                for (j = 0; j < ncuadrados * height; j += height) {
+                    contexto.fillStyle = colorAleatorio();
+                    contexto.fillRect(i, j, width, height);
+                }
+            }
+        }
+        
+        window.onload = function () {
+            contexto = cargaContextoCanvas('canvas1');
+            if (contexto)
+                setInterval("cuadradosAleatorios(contexto)", 1000);
+        }
+    </script>
+</head>
+
+<body>
+    <canvas id="canvas1" height="200" width="200">
+        Tu navegador no sirve
+    </canvas>
+</body>
+
+</html>
