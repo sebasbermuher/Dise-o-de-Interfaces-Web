@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ej1.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Ejercicio 1</h1>
+    </header>
+    <div class="grid-container quitarborder">
+      <div class="item1 move"></div>
+      <div id="balon" class="item2"></div>
+      <div class="item3 entrarIMG"></div>
+      <div class="item4 cambiarIMG2"></div>
+      <div class="item5 pulsar"></div>
+      <div class="item6 move"></div>
+      <div class="item7 cambiarIMG"></div>
+      <div class="item8"></div>
+    </div>
+    <footer>
+      <div id="desplazar">
+        <p>Sebastian Bermúdez Herrera</p>
+        <p>Segundo - DAW</p>
+        <p>Desarrollo de Interfaces Web</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    var keyframes = [{ transform: "rotate(360deg)" }];
+
+    var params = {
+      duration: 1000,
+      iterations: Infinity,
+    };
+
+    var cubeAnimation = document
+      .getElementById("balon")
+      .animate(keyframes, params);
+
+    // --------------------------------
+
+    const time = 8000; // Tiempo en ms
+    var box1 = document.getElementById("desplazar");
+
+    var keyframes = [
+      { transform: "translateX(0)" },
+      { transform: "translateX(444%)" },
+    ];
+
+    var params = {
+      duration: time,
+      iterations: Infinity,
+      direction: "alternate",
+    };
+
+    var anim1 = box1.animate(keyframes, params);
+  </script>
+</html>

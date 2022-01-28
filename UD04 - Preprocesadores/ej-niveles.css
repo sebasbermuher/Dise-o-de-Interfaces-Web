@@ -1,0 +1,13 @@
+div{
+    background: green;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+div h1{
+    color:blue;
+}
+
+div li{
+    color:white;
+}

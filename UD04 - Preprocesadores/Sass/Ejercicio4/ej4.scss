@@ -1,0 +1,14 @@
+$color: #f44336;
+$blanco: #fff;
+$fuente: "Open Sans", sans-serif;
+
+h1.title {
+  font: $fuente;
+  color: $color;
+}
+div.container {
+  color: $color;
+  background: $blanco;
+  width: 100%;
+  box-shadow: 0 2px 1px o rgba(0, 0, 0, 0.2);
+}

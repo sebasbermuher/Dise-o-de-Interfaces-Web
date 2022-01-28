@@ -1,0 +1,35 @@
+//Variables
+$colorFondo: #589bd9;
+$borderHeader: 4px solid blue;
+$displayGrid: grid;
+$fuenteHeader: "Mochiy Pop P One", sans-serif;
+$colorBoton: #1883ba;
+$borderBoton: 2px solid #0016b0;
+$cursorDedo: pointer;
+$colorFondoAside: #c4c4c4;
+$alturaGrafica: 300px;
+$fondoFooter: #151414;
+$alturaFooter: 200px;
+$blanco: white;
+$ocultar: none;
+
+// mixin 1
+@mixin colorBoton($color, $blanco, $borderBoton) {
+  background-color: $color;
+  color: $blanco;
+  border: $borderBoton;
+}
+
+button {
+  @include colorBoton(#1883ba, white, 2px solid #0016b0);
+}
+
+// mixin 2
+@mixin enlacesFooter($color, $opacity) {
+  color: $color;
+  opacity: $opacity;
+}
+
+a:hover {
+  @include enlacesFooter(#ca4b50, 0.5);
+}

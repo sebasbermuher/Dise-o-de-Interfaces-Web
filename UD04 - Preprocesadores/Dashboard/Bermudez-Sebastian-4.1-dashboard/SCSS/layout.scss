@@ -1,0 +1,361 @@
+@import "base";
+@import "components";
+
+.grid-container {
+  display: $displayGrid;
+  grid-template-columns: auto auto auto auto;
+  background-color: $colorFondo;
+  margin-top: -0.6%;
+  margin-left: -0.6%;
+  margin-right: -0.6%;
+  border-bottom: $borderHeader;
+
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url("https://images.vexels.com/media/users/3/147974/isolated/lists/22ed2b8524101426e7b490c95097a8f2-icono-de-ventas-comerciales.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 85%;
+    height: 175px;
+  }
+
+  .item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    .titulo {
+      margin-top: 12%;
+      .pTitulo {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        color: $blanco;
+        font-family: $fuenteHeader;
+      }
+
+      .guionTitulo {
+        margin-top: -6%;
+        margin-bottom: -6%;
+      }
+    }
+  }
+
+  .item3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    .usuario {
+      margin: 0 auto;
+      margin-top: 18%;
+      margin-left: 30%;
+      margin-right: 30%;
+
+      .cerrarSesion {
+        margin-left: 9%;
+      }
+    }
+  }
+
+  .item4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+    .login {
+      margin-top: 10%;
+      margin-left: 20%;
+      margin-right: 20%;
+
+      .inputUser {
+        margin-left: 7.5%;
+        margin-bottom: 0.5%;
+      }
+      p {
+        .iniciarSesion {
+          margin-left: 40%;
+        }
+      }
+    }
+  }
+}
+
+.grid-container-cuerpo {
+  display: $displayGrid;
+  gap: 6px;
+  grid-template-columns: 200px auto;
+
+  .item1-cuerpo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: $displayGrid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 10px;
+    background-color: $colorFondoAside;
+    margin-left: -4%;
+    height: 400px;
+    padding-bottom: 450%;
+
+    .item1-aside {
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .item2-aside {
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .item3-aside {
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .item4-aside {
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .item5-aside {
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+    .item1-aside,
+    .item2-aside,
+    .item3-aside,
+    .item4-aside,
+    .item5-aside {
+      height: 73px;
+      background-color: #ded8d8;
+      font-size: 30px;
+      text-align: center;
+      .alinear {
+        margin-top: 8%;
+      }
+      &:hover {
+        cursor: $cursorDedo;
+        background-color: #db6565;
+      }
+    }
+  }
+}
+
+footer {
+  margin-bottom: -0.6%;
+  margin-left: -0.6%;
+  margin-right: -0.6%;
+  background-color: $fondoFooter;
+
+  .grid-footer {
+    display: $displayGrid;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
+    .footer1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin: 6%;
+      .follow {
+        margin-left: 25%;
+        color: $blanco;
+      }
+      .direccion {
+        margin-left: 10%;
+        color: $blanco;
+      }
+      .telefono {
+        margin-left: 35%;
+        color: $blanco;
+      }
+    }
+    .footer2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      margin: 6%;
+    }
+    .footer3 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      margin: 3%;
+      .firma {
+        margin-left: 18%;
+        color: $blanco;
+        margin-top: 10%;
+      }
+      .curso {
+        margin-left: 26%;
+        color: $blanco;
+      }
+      input[type="email"] {
+        border: 0;
+        padding: 0.625rem;
+        margin-top: 0.3125rem;
+        margin-left: 20%;
+      }
+      input[type="submit"] {
+        background-color: #ca4b50;
+        color: $blanco;
+        cursor: pointer;
+        border: 0;
+        padding: 0.625rem 0.9375rem;
+        margin-top: 0.3125rem;
+      }
+    }
+    .footer1,
+    .footer2,
+    .footer3 {
+      height: $alturaFooter;
+    }
+  }
+}
+
+a {
+  color: $blanco;
+  text-decoration: $ocultar;
+}
+
+//-----------------------------------------------------------------
+//  Dispositivo movil  APPLE IPHONE 8                              |
+// Mediante la extension de google chrome "Probador receptivo"     |
+//-----------------------------------------------------------------
+
+@media (max-width: 499px) {
+  .grid-container-cuerpo {
+    .item1-cuerpo {
+      display: $ocultar;
+    }
+    .item2-cuerpo {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-template-columns: auto;
+
+      .item1-graficas {
+        margin-left: 10%;
+      }
+
+      .item2-graficas {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .item3-graficas {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+
+      .item4-graficas {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+      .tituloTabla {
+        grid-row-start: 5;
+        grid-row-end: 6;
+      }
+
+      .item5-graficas {
+        grid-row-start: 6;
+        grid-row-end: 7;
+      }
+
+      .item6-graficas {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        margin-left: 0%;
+      }
+    }
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto;
+    margin-top: -2.2%;
+    margin-left: -2.2%;
+    margin-right: -2.2%;
+    .item1 {
+      background-size: 105%;
+      height: 150px;
+    }
+    .item2 {
+      .titulo {
+        margin-top: 20%;
+        .pTitulo {
+          font-size: 13px;
+        }
+      }
+    }
+    .item3 {
+      display: $ocultar;
+    }
+    .item4 {
+      display: $ocultar;
+    }
+  }
+
+  i {
+    font-size: 20px;
+  }
+
+  footer {
+    margin-bottom: -2.2%;
+    margin-left: -2.2%;
+    margin-right: -2.2%;
+    .grid-footer {
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      .footer1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 300px;
+        margin: 0%;
+        .redes {
+          margin-top: 6%;
+          .li-redes {
+            padding-left: 0%;
+            padding-right: 0%;
+          }
+        }
+        .follow {
+          display: $ocultar;
+        }
+        .direccion {
+          margin-left: 15%;
+          font-size: 10px;
+          text-align: center;
+        }
+        .telefono {
+          margin-left: 45%;
+          font-size: 10px;
+        }
+      }
+      .footer2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        .acciones {
+          margin-top: 15%;
+          margin-right: 20%;
+          font-size: 13px;
+        }
+      }
+      .footer3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        height: 5px;
+        margin-top: -50%;
+        .firma {
+          margin-left: 10%;
+          font-size: 13px;
+        }
+        .curso {
+          margin-left: 20%;
+          font-size: 13px;
+        }
+        input[type="email"] {
+          margin-left: 5%;
+        }
+      }
+    }
+  }
+}

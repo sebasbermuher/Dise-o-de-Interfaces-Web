@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://images.vexels.com/media/users/3/147974/isolated/preview/22ed2b8524101426e7b490c95097a8f2-icono-de-ventas-comerciales.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="SCSS/layout.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google chart -->
+    <script defer src="JS/grafica1.js"></script>
+    <script defer src="JS/grafica2.js"></script>
+    <script defer src="JS/grafica3.js"></script>
+    <script defer src="JS/grafica4.js"></script>
+    <script defer src="JS/grafica5.js"></script>
+    <script defer src="JS/grafica6.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header class="grid-container">
+      <div class="item1"></div>
+      <div class="item2">
+        <div class="titulo">
+          <p class="pTitulo">Leaders</p>
+          <p class="pTitulo guionTitulo">-</p>
+          <p class="pTitulo">Asesoria de Ventas</p>
+        </div>
+      </div>
+      <div class="item3">
+        <div class="usuario">
+          <p>Usuario: Sebastian</p>
+          <button class="cerrarSesion" type="submit">Cerrar Sesion</button>
+        </div>
+      </div>
+      <div class="item4">
+        <div class="login">
+          <label>Usuario:</label>
+          <input class="inputUser" type="text" />
+          <br />
+          <label>Contraseña:</label>
+          <input type="password" />
+          <p>
+            <button class="iniciarSesion" type="submit">Iniciar Sesion</button>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid-container-cuerpo">
+      <aside class="item1-cuerpo">
+        <div class="item1-aside">
+          <div class="alinear">
+            <span class="material-icons-round"> home </span>
+            Inicio
+          </div>
+        </div>
+        <div class="item2-aside">
+          <div class="alinear">
+            <span class="material-icons-round"> speed </span>
+            Dashboard
+          </div>
+        </div>
+        <div class="item3-aside">
+          <div class="alinear">
+            <span class="material-icons-round"> message </span>
+            Mensajes
+          </div>
+        </div>
+        <div class="item4-aside">
+          <div class="alinear">
+            <span class="material-icons-round"> paid </span>
+            Pagos
+          </div>
+        </div>
+        <div class="item5-aside">
+          <div class="alinear">
+            <span class="material-icons-round"> receipt </span>
+            Ventas
+          </div>
+        </div>
+      </aside>
+      <div class="item2-cuerpo">
+        <div id="chart_div" class="item1-graficas"></div>
+        <div id="columnchart_material" class="item2-graficas"></div>
+        <div id="line_chart" class="item3-graficas"></div>
+        <div id="chart_div2" class="item4-graficas"></div>
+        <div class="tituloTabla">
+          <h5>Modelos de coches más vendidos 2021</h5>
+        </div>
+        <div id="table_div" class="item5-graficas"></div>
+        <div id="donutchart" class="item6-graficas"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="grid-footer">
+        <div class="footer1">
+          <ul class="redes">
+            <li class="li-redes">
+              <a target="_blank" href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="li-redes">
+              <a target="_blank" href="https://twitter.com"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li class="li-redes">
+              <a target="_blank" href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="li-redes">
+              <a target="_blank" href="https://github.com/"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+          <p class="follow">Sigueme en mis redes sociales</p>
+          <p class="direccion">
+            Avda. de la Unidad SN - Castilleja de la Cuesta
+          </p>
+          <p class="telefono">666 11 22 33</p>
+        </div>
+        <div class="footer2">
+          <ul class="acciones">
+            <li class="li-acciones">
+              <a target="_blank" href="#">Contacto</a>
+            </li>
+            <li class="li-acciones"><a target="_blank" href="#">Galeria</a></li>
+            <li class="li-acciones"><a target="_blank" href="#">Blog</a></li>
+            <li class="li-acciones"><a target="_blank" href="#">Cookies</a></li>
+            <li class="li-acciones">
+              <a target="_blank" href="#">Política de privacidad</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer3">
+          <p class="firma">© Web diseñada por Sebastian Bermudez Herrera</p>
+          <p class="curso">2º DAW - Diseño de Interfaces Web</p>
+          <input type="email" name="email" placeholder="Introduce tu email" />
+          <input type="submit" value="Suscribirse" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

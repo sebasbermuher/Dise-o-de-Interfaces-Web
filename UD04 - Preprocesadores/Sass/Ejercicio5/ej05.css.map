@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAQA,AAAA,uBAAuB,CAAC;EALtB,KAAK,EAMa,IAAI;EALtB,MAAM,EAKY,IAAI;EAJtB,gBAAgB,EAIQ,IAAc;CACvC;;AAED,AAAA,cAAc,CAAC;EATb,KAAK,EAUa,KAAK;EATvB,MAAM,EASY,KAAK;EARvB,gBAAgB,EALT,IAAI;CAcZ",
+    "sources": [
+        "ej05.scss"
+    ],
+    "names": [],
+    "file": "ej05.css"
+}
