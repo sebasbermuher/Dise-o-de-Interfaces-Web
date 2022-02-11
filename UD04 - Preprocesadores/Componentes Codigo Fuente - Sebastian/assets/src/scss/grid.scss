@@ -1,0 +1,88 @@
+////
+/// GRID
+/// @author Sebastian Bermudez Herrera
+/// @since 1.0
+////
+
+/// Ancho del grid
+/// @type width
+$grid-width: 100rem;
+
+/// Tamaños del margin bottom para cada grid
+/// @type tamaño margin bottom
+$vertical: 4rem;
+
+/// Tamaños del margin derecho para cada grid
+/// @type tamaño margin rigth
+$horizontal: 4rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10pt;
+}
+
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: $vertical;
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  [class^="col-"] {
+    float: left;
+    background-color: orange;
+    padding: 1rem;
+    &:not(:last-child) {
+      margin-right: $horizontal;
+    }
+  }
+
+  ///
+  /// Reduce la columna segun el tamaño de la pantalla
+  /// @param {Numerico} $index Primer valor de la columna
+  /// @param {Numerico} $subIndex Segundo valor de la columna
+  ///
+  @mixin anchos($index, $subIndex) {
+    .col-#{$index}-of-#{$subIndex} {
+      @if ($index == 1) {
+        width: calc(
+          (100% - (#{$subIndex} - #{$index}) * #{$horizontal}) / #{$subIndex}
+        );
+      } @else if ($index == 2) {
+        width: calc(
+          #{$index} *
+            (
+              (100% - (#{$subIndex} - #{$index} + 1) * #{$horizontal}) /
+                #{$subIndex}
+            ) +
+            (#{$index} - 1) *
+            #{$horizontal}
+        );
+      } @else if ($index > 2) {
+        width: calc(
+          #{$index} *
+            (
+              (100% - (#{$subIndex} - #{$index} + 2) * #{$horizontal}) /
+                #{$subIndex}
+            ) +
+            (#{$index} - 1) *
+            #{$horizontal}
+        );
+      }
+    }
+  }
+  @include anchos(1, 2);
+  @include anchos(3, 4);
+  @include anchos(1, 4);
+  @include anchos(2, 3);
+  @include anchos(2, 4);
+  @include anchos(1, 3);
+}
