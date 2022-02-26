@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ej03</title>
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      main {
+        flex: 1 0 auto;
+        background-color: #230812;
+        color:white;
+        font-family: 'Mochiy Pop P One', sans-serif;
+      }
+
+      h6{
+        font-size: 15px;
+
+      }
+
+      img {
+        width: 250px;
+      }
+
+      #logo {
+        width: 250px;
+      }
+
+      
+    </style>
+  </head>
+
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <div class="nav-wrapper #880e4f pink darken-4">
+          <a class="navbar-brand" href="https://www.thecocktaildb.com/">
+            <img id="logo" src="https://www.thecocktaildb.com/images/logo.png" >
+            </a>
+
+          <ul class="right">
+            <li>
+              <a href="https://www.thecocktaildb.com/"><i class="material-icons">home</i></a>
+            </li>
+            <li>
+              <a href="#"><i class="material-icons">account_circle</i></a>
+            </li>
+          </ul>
+        </div>
+       </nav>
+    </header>
+
+    <main>
+    <!-- CONTENIDO -->
+    <div class="row" >
+      <div class="col m12 s12">
+
+        <aside class="col m4 s12 center">
+          <h6>Aqui puede ver nuestra carta de Margaritas</h6>
+          <!-- <button id="cargar_margaritas">Ver Margaritas</button> -->
+          <button class="waves-effect waves-light btn-small" id="cargar_margaritas" >Ver Margaritas</button>
+          <div id="margaritas" class="margaritas"></div>
+      </aside>  
+
+      <aside class="col m4 s12 center">
+        <h6>Aqui puede ver nuestra carta de Mojitos</h6>
+        <!-- <button id="cargar_mojito">Ver Mojitos</button> -->
+        <button class="waves-effect waves-light btn-small" id="cargar_mojito" >Ver Margaritas</button>
+        <div id="mojito" class="mojito"></div>
+      </aside>  
+        
+      <aside class="col m4 s12 center">
+        <h6>Aqui puede ver nuestra carta de Ron</h6>
+        <!-- <button id="cargar_ron">Ver Ron</button> -->
+        <button class="waves-effect waves-light btn-small" id="cargar_ron" >Ver Margaritas</button>
+        <div id="ron" class="ron"></div>
+      </aside>  
+    </div>  
+    </div>  
+    </main> 
+   
+
+    <!-- FOOTER -->
+    <footer class="page-footer #880e4f pink darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l4 s12">
+            <p class="grey-text text-lighten-4 center">Tarea 3 de la Unidad 5 Frameworks</p>
+          </div>
+          <div class="col l4 s6">
+            <p class="grey-text text-lighten-4 center">Diseño de Interfaces Web</p>
+          </div>
+          <div class="col l4 s6">
+            <p class="grey-text text-lighten-4 center">2º DAW - I.E.S. ALIXAR</p>
+          </div>
+         
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center">
+        © 2022 Realizado por Sebatián Bermúdez Herrera
+        </div>
+      </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/ej03.js"></script>
+  </body>
+</html>
